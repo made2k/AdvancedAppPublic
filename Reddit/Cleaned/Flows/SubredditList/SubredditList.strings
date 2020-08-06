@@ -1,0 +1,18 @@
+/* 
+  SubredditList.strings
+  Reddit
+
+  Created by made2k on 5/25/19.
+  Copyright © 2019 made2k. All rights reserved.
+*/
+
+"View controller title" = "Subreddits";
+
+"Favorite Instructions" = "Tap the star on any subreddit to add to your favorites.";
+"Create new feed" = "Create New Feed";
+
+"feed delete error" = "There was an error deleting this feed";
+
+"favorite section header" = "Favorites";
+"load random error" = "Could not load a random subreddit";
+"load name error" = "Could not load /r/%@";

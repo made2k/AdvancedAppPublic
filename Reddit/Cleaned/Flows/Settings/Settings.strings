@@ -1,0 +1,171 @@
+/* 
+  Settings.strings
+  Reddit
+
+  Created by made2k on 5/24/19.
+  Copyright © 2019 made2k. All rights reserved.
+*/
+
+// MARK: - Settings Main View Controller
+
+"Settings Title" = "Settings";
+
+"Pro Unlock Section Title" = "Pro Unlock";
+"Pro Unlock Row Text" = "Unlock Pro";
+
+"Subreddit Section Title" = "Subreddits";
+"Go to subreddit" = "Go To Subreddit";
+
+"Search Section Title" = "Search";
+"Perform search" = "Perform Search";
+
+"App Settings Section Title" = "App Settings";
+"General" = "General";
+"Appearance" = "Appearance";
+"Theme" = "Theme";
+"Passcode" = "Passcode";
+"Filters" = "Filters";
+"Accounts" = "Accounts";
+
+"About Section Titlte" = "About";
+"Subreddit" = "Subreddit";
+"Open Source" = "Open Source";
+"Privacy" = "Privacy";
+
+// MARK: - General
+
+"general title" = "General";
+
+"post section title" = "Posts";
+"default post sort" = "Default post sort";
+"hide nsfw" = "Hide all nsfw content";
+"hide nsfw detail" = "When enabled, no posts marked NSFW will be shown.";
+"show spoilers" = "Show spoilers";
+"show spoilers detail" = "When enabled, spoilers will not be hidden.";
+"preview mark read row" = "Previewing marks read";
+"preview mark read detail" = "When previewing by long pressing a post, enabling this will mark that post as read.";
+"Open links in" = "Open links in";
+
+"comment section title" = "Comments";
+"default comment sort" = "Default comment sort";
+"number of comments" = "Number of comments to load";
+"comment nav position" = "Comment navigator position";
+"live comments" = "Live Comments";
+
+"swipe section title" = "Gestures";
+"swipe enabled row" = "Enable swipe gestures";
+"swipe configure row" = "Swipe configuration";
+
+"message section title" = "Messages";
+"notification row" = "Notification for new messages";
+"notification row details" = "The app will use background fetch to find new messages. When a new message is detected, it will notify you";
+"fetch interval" = "Message fetch interval";
+
+"message permission title" = "Permission Needed";
+"message permission detail" = "The app needs notification permission to display notifications.";
+"settings action" = "Go to Settings";
+"okay action" = "Okay";
+
+"interval timing" = "%d minutes";
+"manual interval" = "Manual fetch";
+
+"media section title" = "Media";
+"hide gif progress row" = "Hide GIF progress";
+"hide gif progress row detail" = "Hide the gif progress indicator that appears in the top left corner of a GIF.";
+"allow gif scrolling row" = "Allow GIF scrolling";
+"allow gif scrolling row detail" = "Use your finger to slide left or right on a GIF to fast forward or reverse it.";
+"auto mute videos row" = "Auto mute videos";
+"auto mute videos row detail" = "When this setting is enabled, videos will play with the sound off. You'll need to un-mute them in the player.";
+"volume position row" = "Volume Position";
+"volume position row detail" = "When a GIF has sound, where this setting determines where the mute / unmute button will be located.";
+
+"other section title" = "Other";
+"start on subreddit row" = "Start on subreddit";
+"fast access row" = "Fast access side bar";
+"fast access row detail" = "When enabled, you can slide from the side of the screen to reveal the side bar of the current Subreddit. Note, you won't see this if there is no subreddit displayed, or if you're using a personal subreddit like r/all.";
+"enable haptics row" = "Enable Haptic feedback";
+"enable haptics row detail" = "The app will vibrate on sucess or failure when making an API request.";
+"show hide read row" = "Show hide read button";
+"show hide read row detail" = "When browsing a subreddit, a button will show allowing you to temporarily hide any posts you've already seen.";
+"sync icloud row" = "Sync read with iCloud";
+"sync icloud row detail" = "Posts you read on this device will also be marked as read on other devices connected to the same iCloud account.";
+"cache row" = "Configure Cache";
+
+"data usage section" = "Data Usage";
+"autoplay gifs row" = "Autoplay GIFs";
+"autoplay gifs row detail" = "When enabled, GIFs will automatically download and begin playing when they appear on screen.";
+"autoplay gifs cellular row" = "Autoplay GIFs on cellular";
+"autoplay gifs cellular row detail" = "When enabled, GIFs will autoplay on both WiFi networks and cellular. If disabled, you'll need to tap to start the download and play of GIFs when on cellular.";
+
+// MARK: - Live Comments
+
+"live comment title" = "Live Comments";
+"loading animation header" = "Loading Animation";
+"refresh rate header" = "Refresh Rate";
+"refresh rate footer" = "This is the time it takes to look for new comments.";
+"animation type row text" = "Animation Type";
+"refresh interval row text" = "Refresh Interval";
+
+"refresh duration" = "%d seconds";
+
+"animation type title" = "Animation Type";
+
+// MARK: - Cache Management
+
+"cache management title" = "Cache Settings";
+"cache cleared alert" = "Cleared cache";
+
+// MARK: - Appearance
+
+"appearance title" = "Appearance";
+
+"post section" = "Posts";
+"default size row" = "Default post size";
+"large preview type" = "Large preview";
+"large preview short" = "Preview";
+"compact thumbnail type" = "Compact thumbnail";
+"compact thumbnail short" = "Compact";
+"auto hide media overview row" = "Auto hide media overview";
+"auto hide media overview row description" = "Hide a post title and vote buttons automatically when viewing media in the media viewer.";
+"show nsfw row" = "Show nsfw previews";
+"show nsfw row description" = "When disabled, pixelated images of NSFW posts will be shown instead of the mature content.";
+"auto play row" = "Autoplay videos";
+"save view type row" = "Save view type per subreddit";
+"save view type row description" = "When enabled, if you prefer preview mode on one subreddit, but thumbnail mode on another, that preference will be saved for each subreddit.";
+
+"application section" = "Application";
+"app icon row" = "App Icon";
+"font row" = "Font";
+"split size override row" = "Split view size override";
+"prevent splitview row" = "Prevent split view";
+"large title row" = "Use large titles";
+"large title row description" = "Use system large titles in the navigation bar.";
+
+"thumbnail section" = "Thumbnail Mode";
+"thumbnail hidden row" = "Hide thumbnails";
+"thumbnail side row" = "Thumbnail side";
+"thumbnail size row" = "Thumbnail size";
+
+"preview section" = "Preview Mode";
+"title first row" = "Show title first";
+"title first row description" = "When preview mode is enabled, the post title will be displayed first.";
+
+"flair section" = "Flair";
+"link flair row" = "Show link flair";
+"link flair image row" = "Show link image flair";
+"comment flair row" = "Show comment flair";
+"comment flair image row" = "Show comment image flair";
+
+// MARK: - Theme
+
+"theme title" = "Theme Settings";
+
+"extra section" = "Extra";
+"extra section footer" = "Dim bright images will dim images when the app is in Dark Mode and your screen brightness is below half max brightness.";
+"dim bright image row" = "Dim bright images";
+
+"comment section" = "Comments";
+"indicator theme row" = "Indicator Theme";
+
+"screen brightness row" = "Screen brightness";
+"screen brightness detail" = "Use the brightness of your screen to switch between light and dark themes.";

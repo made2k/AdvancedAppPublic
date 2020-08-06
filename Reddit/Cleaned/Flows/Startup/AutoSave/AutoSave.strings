@@ -1,0 +1,22 @@
+/* 
+  AutoSave.strings
+  Reddit
+
+  Created by made2k on 12/28/18.
+  Copyright © 2018 made2k. All rights reserved.
+*/
+
+"Reply Title" = "Unsaved Reply";
+"Reply Body" = "You had an unsaved reply before the app closed. Would you like to continue making the reply?";
+
+"Post Title" = "Unsaved Post";
+"Post Body" = "You had an unsaved post before the app closed. Would you like to continue making the post?";
+
+"Post Restore Error Title" = "Oops";
+"Post Restore Error Body" = "There was a problem restoring your post, but the submission text has been saved to your clipboard if you'd like to continue.";
+
+"Yes" = "Yes";
+"No" = "No";
+"Okay" = "Okay";
+
+"Comment Saved" = "Reply Saved!";

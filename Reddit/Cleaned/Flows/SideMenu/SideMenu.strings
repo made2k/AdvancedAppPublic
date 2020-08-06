@@ -1,0 +1,35 @@
+/* 
+  SideMenu.strings
+  Reddit
+
+  Created by made2k on 2/23/19.
+  Copyright © 2019 made2k. All rights reserved.
+*/
+
+// Subreddit
+"Subscribe" = "Subscribe";
+"Unsubscribe" = "Unsubscribe";
+"Submit" = "Submit";
+"Sidebar" = "Sidebar";
+
+// Listings
+"Post Section Title" = "Posts";
+"Toggle View Mode" = "Toggle view mode";
+"Hide NSFW Content" = "Hide NSFW content";
+
+// General
+"General Section Title" = "General";
+"Settings" = "Settings";
+"Go to Subreddit" = "Go to Subreddit";
+"Messages" = "Messages";
+"Search" = "Search";
+"unread count" = "%d unread";
+
+// User
+"Default User Title" = "User";
+"Sign In" = "Sign In";
+"Profile" = "Profile";
+"Submitted" = "Submitted";
+"Saved" = "Saved";
+"Hidden" = "Hidden";
+"Log Out" = "Log Out";

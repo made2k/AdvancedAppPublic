@@ -1,0 +1,29 @@
+/* 
+  Listings.strings
+  Reddit
+
+  Created by made2k on 12/29/18.
+  Copyright © 2018 made2k. All rights reserved.
+*/
+
+"Failed to load posts" = "There was an error loading the posts.";
+
+"Save Post Title" = "Save";
+"Unsave Post Title" = "Unsave";
+"Save Success" = "Save Successful";
+"Unsave Success" = "Unsave Successful";
+"Copy" = "Copy post URL";
+"Error Saving Post" = "Error saving post";
+
+"Hide Post Title" = "Hide";
+"Unhide Post Title" = "Unhide";
+"Hide success" = "This post has been added to your hidden list. It won't appear any more after the next load.";
+"unhide success" = "This post has been removed from your hidden list. It'll appear in your feed again on after the next load";
+"Error Hiding Post" = "Error hiding post";
+
+"Error Deleting Post" = "Error deleting post";
+"Delete Action Title" = "Delete";
+"delete success" = "This post was successfully deleted. Refresh to see it removed.";
+"cancel delete title" = "Cancel";
+
+"Filter Post Title" = "Filter This";

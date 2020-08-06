@@ -1,0 +1,9 @@
+/* 
+  Album.strings
+  Reddit
+
+  Created by made2k on 2/7/19.
+  Copyright © 2019 made2k. All rights reserved.
+*/
+
+"Error Fetching Album" = "Error getting albums images.";

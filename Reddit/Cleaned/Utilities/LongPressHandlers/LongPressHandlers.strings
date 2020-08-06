@@ -1,0 +1,18 @@
+/* 
+  LongPressHandlers.strings
+  Reddit
+
+  Created by made2k on 6/8/19.
+  Copyright © 2019 made2k. All rights reserved.
+*/
+
+"save to library action" = "Save to library";
+"save to library success" = "Saved!";
+"save to library failure" = "Error saving file to library";
+
+"open in web action" = "Open in web";
+"open in video player" = "Open in video player";
+
+"share action" = "Share";
+
+"change playback speed action" = "Change playback speed";

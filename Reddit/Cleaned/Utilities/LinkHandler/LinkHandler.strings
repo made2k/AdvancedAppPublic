@@ -1,0 +1,10 @@
+/* 
+  LinkHandler.strings
+  Reddit
+
+  Created by made2k on 6/7/19.
+  Copyright © 2019 made2k. All rights reserved.
+*/
+
+
+"Subreddit not found" = "Could not find /r/%@";

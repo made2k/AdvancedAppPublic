@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Comment Indicator Table View Controller-->
+        <scene sceneID="osB-Rp-561">
+            <objects>
+                <tableViewController storyboardIdentifier="CommentIndicator" id="rQP-ea-Lgc" customClass="CommentIndicatorTableViewController" customModule="Reddit" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="gGW-pK-l8v" customClass="GroupedThemeTableView" customModule="Reddit" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="CommentThemeCell" id="4uT-DF-6OA" customClass="CommentIndicatorTableViewCell" customModule="Reddit" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="55.5" width="320" height="43.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="4uT-DF-6OA" id="jiS-MH-BP5">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="rQP-ea-Lgc" id="FmO-BB-JwW"/>
+                            <outlet property="delegate" destination="rQP-ea-Lgc" id="GaM-tx-sga"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SZw-R7-vnF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1933" y="863"/>
+        </scene>
+        <!--Accounts-->
+        <scene sceneID="tDu-Ym-yEI">
+            <objects>
+                <viewController storyboardIdentifier="AccountsViewController" id="EGJ-NT-djS" customClass="AccountsViewController" customModule="Reddit" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="71" sectionHeaderHeight="28" sectionFooterHeight="28" id="UN6-kv-kVR" customClass="GroupedThemeTableView" customModule="Reddit" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="AccountCell" rowHeight="71" id="LWC-Bg-Hb5" customClass="AccountTableViewCell" customModule="Reddit" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="320" height="71"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="LWC-Bg-Hb5" id="Sj2-lj-Yad">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="71"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="username" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kxw-MO-rgc" customClass="PrimaryLabel" customModule="Reddit" customModuleProvider="target">
+                                            <rect key="frame" x="16" y="25" width="76" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Icon_checkmark" translatesAutoresizingMaskIntoConstraints="NO" id="c1O-TM-pLn">
+                                            <rect key="frame" x="282" y="24.5" width="22" height="22"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" secondItem="c1O-TM-pLn" secondAttribute="height" multiplier="1:1" id="0if-XA-Igg"/>
+                                                <constraint firstAttribute="width" constant="22" id="9Qr-DY-2hM"/>
+                                            </constraints>
+                                        </imageView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="leadingMargin" secondItem="kxw-MO-rgc" secondAttribute="leading" id="3FY-Wa-7rT"/>
+                                        <constraint firstItem="c1O-TM-pLn" firstAttribute="centerY" secondItem="Sj2-lj-Yad" secondAttribute="centerY" id="8jH-qY-Dh8"/>
+                                        <constraint firstItem="c1O-TM-pLn" firstAttribute="top" relation="greaterThanOrEqual" secondItem="Sj2-lj-Yad" secondAttribute="topMargin" constant="8" id="KqB-g6-hl0"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="c1O-TM-pLn" secondAttribute="trailing" id="bz2-th-WVk"/>
+                                        <constraint firstItem="kxw-MO-rgc" firstAttribute="centerY" secondItem="Sj2-lj-Yad" secondAttribute="centerY" id="o2u-IY-Lhh"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="selectedImageView" destination="c1O-TM-pLn" id="iae-Jn-IAn"/>
+                                    <outlet property="usernameLabel" destination="kxw-MO-rgc" id="ZnT-uz-PYf"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="EGJ-NT-djS" id="W6S-E5-GRN"/>
+                            <outlet property="delegate" destination="EGJ-NT-djS" id="Orj-N2-8vl"/>
+                        </connections>
+                    </tableView>
+                    <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
+                    <navigationItem key="navigationItem" title="Accounts" id="arG-Q4-ckl">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="wXE-Ld-WcX">
+                            <connections>
+                                <action selector="addAccountButtonPressed:" destination="EGJ-NT-djS" id="9IB-gv-k2k"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="UN6-kv-kVR" id="2dc-xC-9rr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BAG-o4-OgT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-266.39999999999998" y="-730.88455772113946"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Icon_checkmark" width="30" height="30"/>
+    </resources>
+</document>

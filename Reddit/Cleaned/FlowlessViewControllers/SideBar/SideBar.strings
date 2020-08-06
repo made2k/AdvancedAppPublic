@@ -1,0 +1,17 @@
+/* 
+  SideBar.strings
+  Reddit
+
+  Created by made2k on 5/20/19.
+  Copyright © 2019 made2k. All rights reserved.
+*/
+
+"Error Loading" = "Could not load the sidebar";
+"Title" = "Sidebar";
+
+"Subscribe Button" = "Subscribe";
+"Unsubscribe Button" = "Unsubscribe";
+
+"Created at" = "Created: %@";
+"Sub count" = "%@ Subs";
+"Active count" = "%@ Active";

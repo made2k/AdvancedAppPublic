@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Link Submission View Controller-->
+        <scene sceneID="Blc-oT-zIj">
+            <objects>
+                <viewController storyboardIdentifier="controller" id="nk3-bU-ube" customClass="LinkSubmissionViewController" customModule="Reddit" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="CaO-mQ-TaO">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ufN-Gz-9eW" customClass="PrimaryLabel" customModule="Reddit" customModuleProvider="target">
+                                <rect key="frame" x="16" y="24" width="34" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0/300" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xfr-5m-Wvp" customClass="SecondaryLabel" customModule="Reddit" customModuleProvider="target">
+                                <rect key="frame" x="312" y="24" width="47" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ELw-eo-R1a">
+                                <rect key="frame" x="16" y="53" width="343" height="90"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="90" id="asG-Jc-eu0"/>
+                                </constraints>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Link" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G6z-2c-Thw" customClass="PrimaryLabel" customModule="Reddit" customModuleProvider="target">
+                                <rect key="frame" x="16" y="159" width="31.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="V8j-LW-kxR">
+                                <rect key="frame" x="16" y="188" width="343" height="42"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="42" id="xEj-N8-ims"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="URL" returnKeyType="done" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no" textContentType="url"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Send replies to inbox" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kl0-CP-cZu" customClass="PrimaryLabel" customModule="Reddit" customModuleProvider="target">
+                                <rect key="frame" x="16" y="246" width="160" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XUH-s3-1Z7">
+                                <rect key="frame" x="310" y="241" width="51" height="31"/>
+                            </switch>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="quh-Bj-VEe">
+                                <rect key="frame" x="238" y="288" width="121" height="30"/>
+                                <state key="normal" title="Submission rules "/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="kl0-CP-cZu" firstAttribute="top" secondItem="V8j-LW-kxR" secondAttribute="bottom" constant="16" id="9zO-II-3WH"/>
+                            <constraint firstItem="NHz-OZ-7gc" firstAttribute="trailing" secondItem="xfr-5m-Wvp" secondAttribute="trailing" constant="16" id="FqL-ll-T3V"/>
+                            <constraint firstItem="kl0-CP-cZu" firstAttribute="leading" secondItem="V8j-LW-kxR" secondAttribute="leading" id="GWg-Oa-cT5"/>
+                            <constraint firstItem="xfr-5m-Wvp" firstAttribute="trailing" secondItem="ELw-eo-R1a" secondAttribute="trailing" id="IxB-0A-6xa"/>
+                            <constraint firstItem="G6z-2c-Thw" firstAttribute="top" secondItem="ELw-eo-R1a" secondAttribute="bottom" constant="16" id="M6r-Cz-b4b"/>
+                            <constraint firstItem="XUH-s3-1Z7" firstAttribute="trailing" secondItem="V8j-LW-kxR" secondAttribute="trailing" id="UPt-jc-cO3"/>
+                            <constraint firstItem="G6z-2c-Thw" firstAttribute="leading" secondItem="ELw-eo-R1a" secondAttribute="leading" id="Xde-Sr-WXX"/>
+                            <constraint firstItem="ELw-eo-R1a" firstAttribute="leading" secondItem="ufN-Gz-9eW" secondAttribute="leading" id="coH-4r-nm7"/>
+                            <constraint firstItem="ufN-Gz-9eW" firstAttribute="top" secondItem="NHz-OZ-7gc" secondAttribute="top" constant="24" id="eLh-8n-mqb"/>
+                            <constraint firstItem="V8j-LW-kxR" firstAttribute="leading" secondItem="G6z-2c-Thw" secondAttribute="leading" id="ejO-fa-pZE"/>
+                            <constraint firstItem="xfr-5m-Wvp" firstAttribute="centerY" secondItem="ufN-Gz-9eW" secondAttribute="centerY" id="itq-Bf-6cC"/>
+                            <constraint firstItem="V8j-LW-kxR" firstAttribute="top" secondItem="G6z-2c-Thw" secondAttribute="bottom" constant="8" id="jYh-es-cBE"/>
+                            <constraint firstItem="ufN-Gz-9eW" firstAttribute="leading" secondItem="NHz-OZ-7gc" secondAttribute="leading" constant="16" id="mie-cp-Zpk"/>
+                            <constraint firstItem="V8j-LW-kxR" firstAttribute="trailing" secondItem="ELw-eo-R1a" secondAttribute="trailing" id="qNB-bg-hzN"/>
+                            <constraint firstItem="XUH-s3-1Z7" firstAttribute="centerY" secondItem="kl0-CP-cZu" secondAttribute="centerY" id="uy7-ti-Qks"/>
+                            <constraint firstItem="quh-Bj-VEe" firstAttribute="trailing" secondItem="XUH-s3-1Z7" secondAttribute="trailing" id="v52-FY-htW"/>
+                            <constraint firstItem="quh-Bj-VEe" firstAttribute="top" secondItem="XUH-s3-1Z7" secondAttribute="bottom" constant="16" id="wi2-Km-hpT"/>
+                            <constraint firstItem="ELw-eo-R1a" firstAttribute="top" secondItem="ufN-Gz-9eW" secondAttribute="bottom" constant="8" id="xbi-Bh-pc6"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="NHz-OZ-7gc"/>
+                    </view>
+                    <connections>
+                        <outlet property="linkTextField" destination="V8j-LW-kxR" id="rUd-ra-qj5"/>
+                        <outlet property="sendRepliesSwitch" destination="XUH-s3-1Z7" id="FH1-Wr-BOz"/>
+                        <outlet property="submissionRulesButton" destination="quh-Bj-VEe" id="CrF-vT-Ofu"/>
+                        <outlet property="titleLengthLabel" destination="xfr-5m-Wvp" id="zvz-Vm-Yuz"/>
+                        <outlet property="titleTextView" destination="ELw-eo-R1a" id="uFU-cy-ohh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bDI-qB-S3D" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="24.800000000000001" y="182.15892053973016"/>
+        </scene>
+    </scenes>
+</document>

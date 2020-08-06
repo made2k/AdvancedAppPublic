@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Font-->
+        <scene sceneID="meA-yf-WNU">
+            <objects>
+                <tableViewController storyboardIdentifier="FontSettings" title="Font" id="dAj-Fl-Zne" customClass="FontSettingsTableViewController" customModule="Reddit" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="R5v-Of-MZt" customClass="GroupedThemeTableView" customModule="Reddit" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <sections>
+                            <tableViewSection headerTitle="Font" id="pAG-Ig-Rbt">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="60" id="MPi-en-M0e" customClass="GroupThemeTableViewCell" customModule="Reddit" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="55.5" width="414" height="60"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="MPi-en-M0e" id="MKV-gy-ZsF">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="60"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Mq-OT-ZRX" customClass="PrimaryLabel" customModule="Reddit" customModuleProvider="target">
+                                                    <rect key="frame" x="16" y="11" width="382" height="38"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M51-Wg-4zp">
+                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="60"/>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="5Mq-OT-ZRX" firstAttribute="top" secondItem="MKV-gy-ZsF" secondAttribute="top" constant="11" id="2gk-4m-Pec"/>
+                                                <constraint firstAttribute="trailing" secondItem="M51-Wg-4zp" secondAttribute="trailing" id="Dxa-mb-Ook"/>
+                                                <constraint firstItem="M51-Wg-4zp" firstAttribute="top" secondItem="MKV-gy-ZsF" secondAttribute="top" id="Kjm-mW-eDg"/>
+                                                <constraint firstItem="M51-Wg-4zp" firstAttribute="bottom" secondItem="MKV-gy-ZsF" secondAttribute="bottom" id="LqM-Pe-w5c"/>
+                                                <constraint firstItem="5Mq-OT-ZRX" firstAttribute="leading" secondItem="MKV-gy-ZsF" secondAttribute="leading" constant="16" id="OPr-RP-RiR"/>
+                                                <constraint firstItem="5Mq-OT-ZRX" firstAttribute="centerY" secondItem="MKV-gy-ZsF" secondAttribute="centerY" id="Wiv-aO-jJm"/>
+                                                <constraint firstItem="5Mq-OT-ZRX" firstAttribute="centerX" secondItem="MKV-gy-ZsF" secondAttribute="centerX" id="ZHU-Xg-0Pd"/>
+                                                <constraint firstItem="M51-Wg-4zp" firstAttribute="leading" secondItem="MKV-gy-ZsF" secondAttribute="leading" id="pYg-qe-BM1"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection headerTitle="Font Size" id="z8G-HW-SFg">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="97" id="BlA-km-4c3" customClass="GroupThemeTableViewCell" customModule="Reddit" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="171.5" width="414" height="97"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="BlA-km-4c3" id="YeL-Q0-zLf">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="97"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="037-Se-FUT" customClass="PrimaryLabel" customModule="Reddit" customModuleProvider="target">
+                                                    <rect key="frame" x="16" y="11" width="42" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="3Te-ka-RBM">
+                                                    <rect key="frame" x="14" y="40" width="386" height="31"/>
+                                                </slider>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="037-Se-FUT" firstAttribute="top" secondItem="YeL-Q0-zLf" secondAttribute="top" constant="11" id="7Q8-wc-CyH"/>
+                                                <constraint firstItem="037-Se-FUT" firstAttribute="leading" secondItem="YeL-Q0-zLf" secondAttribute="leading" constant="16" id="HKu-tg-irh"/>
+                                                <constraint firstItem="3Te-ka-RBM" firstAttribute="leading" secondItem="037-Se-FUT" secondAttribute="leading" id="MYc-zF-bKL"/>
+                                                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="3Te-ka-RBM" secondAttribute="bottom" constant="17.5" id="Q3c-ch-18Y"/>
+                                                <constraint firstItem="3Te-ka-RBM" firstAttribute="top" secondItem="037-Se-FUT" secondAttribute="bottom" constant="8" id="ZRH-iD-Dam"/>
+                                                <constraint firstItem="3Te-ka-RBM" firstAttribute="centerX" secondItem="YeL-Q0-zLf" secondAttribute="centerX" id="wIZ-yB-kjb"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" id="fLy-Qa-HY5" customClass="GroupThemeTableViewCell" customModule="Reddit" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="268.5" width="414" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="fLy-Qa-HY5" id="E48-yI-3es">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Reset to Default" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ylN-zl-v6G">
+                                                    <rect key="frame" x="145.5" y="11" width="123" height="22"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.93725490199999995" green="0.28235294119999998" blue="0.23921568630000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rh7-Q3-ToF">
+                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="Rh7-Q3-ToF" secondAttribute="trailing" id="Akx-GX-lX3"/>
+                                                <constraint firstItem="Rh7-Q3-ToF" firstAttribute="top" secondItem="E48-yI-3es" secondAttribute="top" id="MFD-1l-oS5"/>
+                                                <constraint firstItem="ylN-zl-v6G" firstAttribute="centerY" secondItem="E48-yI-3es" secondAttribute="centerY" id="OY2-Pw-G0F"/>
+                                                <constraint firstAttribute="bottom" secondItem="Rh7-Q3-ToF" secondAttribute="bottom" id="QNt-iC-DEd"/>
+                                                <constraint firstItem="ylN-zl-v6G" firstAttribute="top" secondItem="E48-yI-3es" secondAttribute="top" constant="11" id="fBW-f9-jn0"/>
+                                                <constraint firstItem="Rh7-Q3-ToF" firstAttribute="leading" secondItem="E48-yI-3es" secondAttribute="leading" id="mvH-vV-tEO"/>
+                                                <constraint firstItem="ylN-zl-v6G" firstAttribute="centerX" secondItem="E48-yI-3es" secondAttribute="centerX" id="sXc-0E-ieV"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="dAj-Fl-Zne" id="x1A-Hi-iUH"/>
+                            <outlet property="delegate" destination="dAj-Fl-Zne" id="dGF-yU-ZTr"/>
+                        </connections>
+                    </tableView>
+                    <connections>
+                        <outlet property="fontNameLabel" destination="5Mq-OT-ZRX" id="aaP-Pj-mdv"/>
+                        <outlet property="fontSelectionButton" destination="M51-Wg-4zp" id="kba-xH-2f4"/>
+                        <outlet property="fontSizeLabel" destination="037-Se-FUT" id="W4K-cP-3Az"/>
+                        <outlet property="fontSizeSlider" destination="3Te-ka-RBM" id="dpc-ez-kLW"/>
+                        <outlet property="resetDefaultButton" destination="Rh7-Q3-ToF" id="ggJ-kB-Rzy"/>
+                        <outlet property="resetLabel" destination="ylN-zl-v6G" id="UbU-Zx-bE7"/>
+                        <segue destination="jOB-pg-diS" kind="show" identifier="selectFont" id="L3O-O0-KzX"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="N3q-3A-q45" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3129" y="-607"/>
+        </scene>
+        <!--Select Font Table View Controller-->
+        <scene sceneID="Yfu-fi-kHf">
+            <objects>
+                <tableViewController id="jOB-pg-diS" customClass="SelectFontTableViewController" customModule="Reddit" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="oFE-dz-CDU" customClass="PlainThemeTableView" customModule="Reddit" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" textLabel="NzY-un-KPA" style="IBUITableViewCellStyleDefault" id="cOP-xu-Jub" customClass="GroupThemeTableViewCell" customModule="Reddit" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="cOP-xu-Jub" id="icP-dc-I80">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="NzY-un-KPA" customClass="PrimaryLabel" customModule="Reddit" customModuleProvider="target">
+                                            <rect key="frame" x="20" y="0.0" width="374" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="jOB-pg-diS" id="c91-BP-IhQ"/>
+                            <outlet property="delegate" destination="jOB-pg-diS" id="Mdy-LF-mHU"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gLg-dF-Mck" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2373" y="-607"/>
+        </scene>
+    </scenes>
+</document>

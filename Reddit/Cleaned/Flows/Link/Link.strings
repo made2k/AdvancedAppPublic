@@ -1,0 +1,55 @@
+/* 
+  Link.strings
+  Reddit
+
+  Created by made2k on 1/12/19.
+  Copyright © 2019 made2k. All rights reserved.
+*/
+
+"Failed to load comments mesage" = "Failed to load comments. Please try again.";
+
+// Self Text Long Press
+"Select Text" = "Select Text";
+
+// Preview action items
+"Upvote" = "Upvote";
+"Remove Upvote" = "Un-Upvote";
+"Downvote" = "Downvote";
+"Remove Downvote" = "Un-Downvote";
+
+// Empty View
+"Empty Loading Title" = "Loading Link";
+"Empty Not Selected Title" = "Select a post to load";
+
+// Empty Comment
+"No Comments Text" = "It's quiet in here...";
+
+// Vote Cell Node
+"by Prefix" = "by ";
+"in String" = " in ";
+"Vote Cell Load More" = "You are viewing only a subset of the comments. Please tap here to load all the comments.";
+
+// Post Actions
+"Share Content Link" = "Content Link";
+"Share Reddit Post" = "Reddit Post";
+"Edit Post" = "Edit Post";
+"Add Comment" = "Add Comment";
+"Live Comments" = "Live Comments";
+"Save" = "Save";
+"Unsave" = "Unsave";
+"Show" = "Show";
+"Hide" = "Hide";
+"Sort Comments" = "Sort Comments";
+"Mark above as read" = "Mark Above as Read";
+"Remind" = "Remind Me";
+
+// Comment Actions
+"Edit Title" = "Edit";
+"Author Title" = "u/%@";
+"Filter Title" = "Create Filter";
+"Share Title" = "Share";
+"Select Mode Title" = "Select Text";
+"Delete Title" = "Delete";
+"Reply Title" = "Reply";
+
+"Delete Error Message" = "There was an error deleting your comment.";

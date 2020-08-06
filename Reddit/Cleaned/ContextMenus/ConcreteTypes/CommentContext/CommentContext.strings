@@ -1,0 +1,23 @@
+/* 
+  CommentContext.strings
+  Reddit
+
+  Created by made2k on 8/15/19.
+  Copyright © 2019 made2k. All rights reserved.
+*/
+
+"edit title" = "Edit";
+
+"share title" = "Share";
+
+"select text title" = "Select Text";
+
+"user title" = "u/%@";
+
+"delete title" = "Delete";
+
+"filter title" = "Create Filter";
+
+"reply title" = "Reply";
+
+"remind title" = "Remind Me";

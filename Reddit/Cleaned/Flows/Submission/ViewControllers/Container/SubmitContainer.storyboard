@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Submit Container View Controller-->
+        <scene sceneID="y5V-I4-paf">
+            <objects>
+                <viewController storyboardIdentifier="controller" modalPresentationStyle="pageSheet" id="ctS-xI-ajC" customClass="SubmitContainerViewController" customModule="Reddit" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ckk-QM-MZg"/>
+                        <viewControllerLayoutGuide type="bottom" id="Vhl-VD-hMo"/>
+                    </layoutGuides>
+                    <view key="view" clipsSubviews="YES" contentMode="scaleToFill" id="52E-YB-ogd">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jSO-zr-eVV">
+                                <rect key="frame" x="0.0" y="47" width="375" height="620"/>
+                            </containerView>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="UBD-Pb-SLE">
+                                <rect key="frame" x="142" y="8" width="91" height="32"/>
+                                <segments>
+                                    <segment title="Link"/>
+                                    <segment title="Text"/>
+                                </segments>
+                            </segmentedControl>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="jSO-zr-eVV" firstAttribute="centerX" secondItem="52E-YB-ogd" secondAttribute="centerX" id="3TL-sS-Ce2"/>
+                            <constraint firstItem="UBD-Pb-SLE" firstAttribute="top" secondItem="Ckk-QM-MZg" secondAttribute="bottom" constant="8" id="BSf-V8-M4o"/>
+                            <constraint firstItem="jSO-zr-eVV" firstAttribute="width" secondItem="52E-YB-ogd" secondAttribute="width" id="DMi-Mp-fsy"/>
+                            <constraint firstItem="UBD-Pb-SLE" firstAttribute="centerX" secondItem="52E-YB-ogd" secondAttribute="centerX" id="QM4-qQ-3Vk"/>
+                            <constraint firstItem="jSO-zr-eVV" firstAttribute="top" secondItem="UBD-Pb-SLE" secondAttribute="bottom" constant="8" id="k3C-je-VKz"/>
+                            <constraint firstItem="Vhl-VD-hMo" firstAttribute="top" secondItem="jSO-zr-eVV" secondAttribute="bottom" id="lPx-nj-C3f"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="containerView" destination="jSO-zr-eVV" id="FiI-tp-DHW"/>
+                        <outlet property="segmentControl" destination="UBD-Pb-SLE" id="xCU-jc-sYP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LgQ-aR-jnb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="110" y="190"/>
+        </scene>
+    </scenes>
+</document>

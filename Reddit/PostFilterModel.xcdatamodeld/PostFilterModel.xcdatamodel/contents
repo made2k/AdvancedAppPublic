@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="12141" systemVersion="16F73" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="CommentCountPostFilter" representedClassName=".CommentCountPostFilter" syncable="YES">
+        <attribute name="greaterThan" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="number" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="subreddit" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="DomainPostFilter" representedClassName=".DomainPostFilter" syncable="YES">
+        <attribute name="contains" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="query" attributeType="String" syncable="YES"/>
+        <attribute name="subreddit" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="DownvotePostFilter" representedClassName=".DownvotePostFilter" syncable="YES">
+        <attribute name="greaterThan" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="number" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="subreddit" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="FlairPostFilter" representedClassName=".FlairPostFilter" syncable="YES">
+        <attribute name="contains" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="query" attributeType="String" syncable="YES"/>
+        <attribute name="subreddit" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="SubredditPostFilter" representedClassName=".SubredditPostFilter" syncable="YES">
+        <attribute name="contains" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="query" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="TitlePostFilter" representedClassName=".TitlePostFilter" syncable="YES">
+        <attribute name="contains" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="query" attributeType="String" syncable="YES"/>
+        <attribute name="subreddit" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="UpvotePostFilter" representedClassName=".UpvotePostFilter" syncable="YES">
+        <attribute name="greaterThan" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="number" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="subreddit" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="UserPostFilter" representedClassName=".UserPostFilter" syncable="YES">
+        <attribute name="contains" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="query" attributeType="String" syncable="YES"/>
+        <attribute name="subreddit" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="DomainPostFilter" positionX="-45" positionY="36" width="128" height="90"/>
+        <element name="DownvotePostFilter" positionX="-36" positionY="45" width="128" height="90"/>
+        <element name="FlairPostFilter" positionX="-45" positionY="36" width="128" height="90"/>
+        <element name="SubredditPostFilter" positionX="-54" positionY="-9" width="128" height="75"/>
+        <element name="TitlePostFilter" positionX="-54" positionY="18" width="128" height="90"/>
+        <element name="UpvotePostFilter" positionX="-54" positionY="18" width="128" height="90"/>
+        <element name="UserPostFilter" positionX="-54" positionY="9" width="128" height="90"/>
+        <element name="CommentCountPostFilter" positionX="-45" positionY="45" width="128" height="90"/>
+    </elements>
+</model>

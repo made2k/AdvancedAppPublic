@@ -1,0 +1,15 @@
+/* 
+  Search.strings
+  Reddit
+
+  Created by made2k on 6/11/19.
+  Copyright © 2019 made2k. All rights reserved.
+*/
+
+"search view controller title" = "Search";
+
+"link section header" = "Links";
+"user section header" = "User";
+"subreddit section header" = "Subreddits";
+
+"see more" = "See more...";

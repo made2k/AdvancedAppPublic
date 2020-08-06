@@ -1,0 +1,32 @@
+/* 
+  UIKitExtensions.strings
+  Reddit
+
+  Created by made2k on 5/31/19.
+  Copyright © 2019 made2k. All rights reserved.
+*/
+
+"Ok button" = "Okay";
+"Cancel button" = "Cancel";
+"Sign in button" = "Sign In";
+"Not now button" = "Not Now";
+"Upgrade button" = "Upgrade";
+"Open settings button" = "Open Settings";
+
+// MARK: - Errors
+
+// Generic
+"Generic Error Message" = "Could not complete the operation. Please try again.";
+"Generic Error Toast" = "There was an error.";
+
+// Authentication
+"Not Signed In" = "Not Signed In";
+"Not signed in message" = "You need to be signed in to do this.";
+
+// Pro Mode
+"Pro Mode" = "Pro Mode";
+"Pro upgrade message" = "You need to upgrade to Pro to unlock this feature.";
+
+// Photo Access
+"Permission Needed" = "Permission Needed";
+"Photo permission message" = "Advanced does not have permission to access your photos. You can change this in settings.";

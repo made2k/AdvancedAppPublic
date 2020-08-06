@@ -1,0 +1,12 @@
+/* 
+  Startup.strings
+  Reddit
+
+  Created by made2k on 12/28/18.
+  Copyright © 2018 made2k. All rights reserved.
+*/
+
+"User Load Failed Message" = "There was an error loading your account information.";
+
+"Try Again" = "Try Again";
+"Sign Out" = "Sign Out";

@@ -1,0 +1,10 @@
+/* 
+  SelfTextContext.strings
+  Reddit
+
+  Created by made2k on 8/19/19.
+  Copyright © 2019 made2k. All rights reserved.
+*/
+
+"select text title" = "Select Text";
+"add comment title" = "Add Comment";

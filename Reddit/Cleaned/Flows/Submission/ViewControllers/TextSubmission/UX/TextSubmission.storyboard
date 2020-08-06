@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Text Submission View Controller-->
+        <scene sceneID="OEv-Fk-17x">
+            <objects>
+                <viewController storyboardIdentifier="controller" id="WCq-sZ-EVK" customClass="TextSubmissionViewController" customModule="Reddit" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="igY-4W-p5G">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="1000" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5fa-BC-sb3" customClass="PrimaryLabel" customModule="Reddit" customModuleProvider="target">
+                                <rect key="frame" x="16" y="24" width="34" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0/300" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i0n-jP-6bL" customClass="SecondaryLabel" customModule="Reddit" customModuleProvider="target">
+                                <rect key="frame" x="312" y="24" width="47" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="iFf-To-Rau">
+                                <rect key="frame" x="16" y="53" width="343" height="90"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="90" id="FIM-XI-cHA"/>
+                                </constraints>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="1000" text="Post Body" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K2c-ti-xwJ" customClass="PrimaryLabel" customModule="Reddit" customModuleProvider="target">
+                                <rect key="frame" x="16" y="159" width="78" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Send replies to inbox" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Mv-QT-mvR" customClass="PrimaryLabel" customModule="Reddit" customModuleProvider="target">
+                                <rect key="frame" x="16" y="404" width="160" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9cJ-4L-gje">
+                                <rect key="frame" x="310" y="399" width="51" height="31"/>
+                            </switch>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dRI-ge-37z">
+                                <rect key="frame" x="238" y="446" width="121" height="30"/>
+                                <state key="normal" title="Submission rules "/>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="a31-xb-f58">
+                                <rect key="frame" x="16" y="188" width="343" height="200"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" priority="250" constant="200" id="N8M-tL-zjh"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="mOV-Lq-eS7"/>
+                                </constraints>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="9cJ-4L-gje" firstAttribute="centerY" secondItem="7Mv-QT-mvR" secondAttribute="centerY" id="2kf-0t-HiF"/>
+                            <constraint firstItem="S1A-HP-3Lb" firstAttribute="trailing" secondItem="i0n-jP-6bL" secondAttribute="trailing" constant="16" id="6rr-ba-r1X"/>
+                            <constraint firstItem="i0n-jP-6bL" firstAttribute="trailing" secondItem="iFf-To-Rau" secondAttribute="trailing" id="9fK-PO-Lbt"/>
+                            <constraint firstItem="iFf-To-Rau" firstAttribute="top" secondItem="5fa-BC-sb3" secondAttribute="bottom" constant="8" id="Fun-QN-hDM"/>
+                            <constraint firstItem="5fa-BC-sb3" firstAttribute="top" secondItem="S1A-HP-3Lb" secondAttribute="top" constant="24" id="KXv-4N-W7e"/>
+                            <constraint firstItem="5fa-BC-sb3" firstAttribute="leading" secondItem="S1A-HP-3Lb" secondAttribute="leading" constant="16" id="MIL-Jc-YKy"/>
+                            <constraint firstItem="iFf-To-Rau" firstAttribute="leading" secondItem="5fa-BC-sb3" secondAttribute="leading" id="MdG-Bf-RLS"/>
+                            <constraint firstItem="dRI-ge-37z" firstAttribute="top" secondItem="9cJ-4L-gje" secondAttribute="bottom" constant="16" id="TLA-V4-Fcf"/>
+                            <constraint firstItem="7Mv-QT-mvR" firstAttribute="top" secondItem="a31-xb-f58" secondAttribute="bottom" constant="16" id="bmq-6B-KWU"/>
+                            <constraint firstItem="K2c-ti-xwJ" firstAttribute="leading" secondItem="iFf-To-Rau" secondAttribute="leading" id="boG-nr-wyQ"/>
+                            <constraint firstItem="K2c-ti-xwJ" firstAttribute="top" secondItem="iFf-To-Rau" secondAttribute="bottom" constant="16" id="haP-BY-5NN"/>
+                            <constraint firstItem="a31-xb-f58" firstAttribute="leading" secondItem="K2c-ti-xwJ" secondAttribute="leading" id="hxc-jI-rsg"/>
+                            <constraint firstItem="dRI-ge-37z" firstAttribute="trailing" secondItem="9cJ-4L-gje" secondAttribute="trailing" id="ihh-gt-H80"/>
+                            <constraint firstItem="7Mv-QT-mvR" firstAttribute="leading" secondItem="a31-xb-f58" secondAttribute="leading" id="kma-NI-h3U"/>
+                            <constraint firstItem="a31-xb-f58" firstAttribute="trailing" secondItem="iFf-To-Rau" secondAttribute="trailing" id="pVG-dD-9mb"/>
+                            <constraint firstItem="a31-xb-f58" firstAttribute="top" secondItem="K2c-ti-xwJ" secondAttribute="bottom" constant="8" id="qDn-V2-xHx"/>
+                            <constraint firstItem="9cJ-4L-gje" firstAttribute="trailing" secondItem="a31-xb-f58" secondAttribute="trailing" id="slU-YE-3y6"/>
+                            <constraint firstItem="S1A-HP-3Lb" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="dRI-ge-37z" secondAttribute="bottom" constant="12" id="uR0-uW-WTe"/>
+                            <constraint firstItem="i0n-jP-6bL" firstAttribute="centerY" secondItem="5fa-BC-sb3" secondAttribute="centerY" id="wkd-rk-MRa"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="S1A-HP-3Lb"/>
+                    </view>
+                    <connections>
+                        <outlet property="bodyTextView" destination="a31-xb-f58" id="aQp-w0-Abx"/>
+                        <outlet property="sendRepliesSwitch" destination="9cJ-4L-gje" id="CCx-7v-IFb"/>
+                        <outlet property="submissionRulesButton" destination="dRI-ge-37z" id="N2S-5F-nGG"/>
+                        <outlet property="titleLengthLabel" destination="i0n-jP-6bL" id="ghA-9p-ayp"/>
+                        <outlet property="titleTextView" destination="iFf-To-Rau" id="8cg-uU-ThU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BWN-3m-T3J" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="24.800000000000001" y="182.15892053973016"/>
+        </scene>
+    </scenes>
+</document>

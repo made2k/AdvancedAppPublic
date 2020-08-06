@@ -1,0 +1,420 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Swipe Configuration View Controller-->
+        <scene sceneID="3C3-My-AAu">
+            <objects>
+                <tableViewController storyboardIdentifier="SwipeList" id="jhe-jM-CW4" customClass="SwipeConfigurationViewController" customModule="Reddit" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="MSq-4N-owT" customClass="GroupedThemeTableView" customModule="Reddit" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <sections>
+                            <tableViewSection headerTitle="Links" id="Fb0-aq-QIk">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="56" id="YwK-ma-ayH" customClass="GroupThemeTableViewCell" customModule="Reddit" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="55.5" width="320" height="56"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="YwK-ma-ayH" id="ryb-EI-EDN">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="56"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shortSwipeRight" translatesAutoresizingMaskIntoConstraints="NO" id="O6R-Ql-Q1s" customClass="BlueUIImageView" customModule="Reddit" customModuleProvider="target">
+                                                    <rect key="frame" x="16" y="5" width="109" height="46"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hdI-0y-rlB" customClass="SecondaryLabel" customModule="Reddit" customModuleProvider="target">
+                                                    <rect key="frame" x="262" y="17.5" width="42" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="O6R-Ql-Q1s" firstAttribute="top" secondItem="ryb-EI-EDN" secondAttribute="top" constant="5" id="MGg-sz-hL0"/>
+                                                <constraint firstItem="hdI-0y-rlB" firstAttribute="centerY" secondItem="ryb-EI-EDN" secondAttribute="centerY" id="QII-Zy-2Gp"/>
+                                                <constraint firstAttribute="trailing" secondItem="hdI-0y-rlB" secondAttribute="trailing" constant="16" id="Ruf-fe-SeJ"/>
+                                                <constraint firstItem="hdI-0y-rlB" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="O6R-Ql-Q1s" secondAttribute="trailing" constant="16" id="VmX-yn-ZAk"/>
+                                                <constraint firstItem="O6R-Ql-Q1s" firstAttribute="leading" secondItem="ryb-EI-EDN" secondAttribute="leading" constant="16" id="cyA-3D-IWH"/>
+                                                <constraint firstItem="O6R-Ql-Q1s" firstAttribute="centerY" secondItem="ryb-EI-EDN" secondAttribute="centerY" id="yxH-DA-9qu"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="56" id="K6g-he-bS2" customClass="GroupThemeTableViewCell" customModule="Reddit" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="111.5" width="320" height="56"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="K6g-he-bS2" id="D2u-Dx-EDF">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="56"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="longSwipeRight" translatesAutoresizingMaskIntoConstraints="NO" id="HeK-8O-CNH" customClass="BlueUIImageView" customModule="Reddit" customModuleProvider="target">
+                                                    <rect key="frame" x="16" y="5" width="109" height="46"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6zR-6y-Mpt" customClass="SecondaryLabel" customModule="Reddit" customModuleProvider="target">
+                                                    <rect key="frame" x="262" y="17.5" width="42" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="6zR-6y-Mpt" firstAttribute="centerY" secondItem="D2u-Dx-EDF" secondAttribute="centerY" id="Ia9-f9-NBb"/>
+                                                <constraint firstItem="HeK-8O-CNH" firstAttribute="centerY" secondItem="D2u-Dx-EDF" secondAttribute="centerY" id="Rba-Rg-MO4"/>
+                                                <constraint firstItem="HeK-8O-CNH" firstAttribute="top" secondItem="D2u-Dx-EDF" secondAttribute="top" constant="5" id="a4r-20-UN0"/>
+                                                <constraint firstAttribute="trailing" secondItem="6zR-6y-Mpt" secondAttribute="trailing" constant="16" id="d7S-YP-zPv"/>
+                                                <constraint firstItem="HeK-8O-CNH" firstAttribute="leading" secondItem="D2u-Dx-EDF" secondAttribute="leading" constant="16" id="whL-on-5YP"/>
+                                                <constraint firstItem="6zR-6y-Mpt" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="HeK-8O-CNH" secondAttribute="trailing" constant="16" id="xZM-Tw-sHx"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="56" id="13I-AJ-eVy" customClass="GroupThemeTableViewCell" customModule="Reddit" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="167.5" width="320" height="56"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="13I-AJ-eVy" id="EZo-if-0zX">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="56"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shortSwipeLeft" translatesAutoresizingMaskIntoConstraints="NO" id="eYF-pe-ZjL" customClass="BlueUIImageView" customModule="Reddit" customModuleProvider="target">
+                                                    <rect key="frame" x="16" y="5" width="109" height="46"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="swx-6W-LTc" customClass="SecondaryLabel" customModule="Reddit" customModuleProvider="target">
+                                                    <rect key="frame" x="262" y="17.5" width="42" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="eYF-pe-ZjL" firstAttribute="centerY" secondItem="EZo-if-0zX" secondAttribute="centerY" id="Hh1-8o-wu0"/>
+                                                <constraint firstItem="swx-6W-LTc" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="eYF-pe-ZjL" secondAttribute="trailing" constant="16" id="LPz-2K-Xhz"/>
+                                                <constraint firstItem="swx-6W-LTc" firstAttribute="centerY" secondItem="EZo-if-0zX" secondAttribute="centerY" id="Y2y-gM-zfW"/>
+                                                <constraint firstItem="eYF-pe-ZjL" firstAttribute="top" secondItem="EZo-if-0zX" secondAttribute="top" constant="5" id="lHy-fC-03K"/>
+                                                <constraint firstAttribute="trailing" secondItem="swx-6W-LTc" secondAttribute="trailing" constant="16" id="rAK-lG-KNB"/>
+                                                <constraint firstItem="eYF-pe-ZjL" firstAttribute="leading" secondItem="EZo-if-0zX" secondAttribute="leading" constant="16" id="tOO-QP-mek"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="56" id="rzv-Vj-kJQ" customClass="GroupThemeTableViewCell" customModule="Reddit" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="223.5" width="320" height="56"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="rzv-Vj-kJQ" id="Xwr-bN-lTQ">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="56"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="longSwipeLeft" translatesAutoresizingMaskIntoConstraints="NO" id="Gax-Tm-rnr" customClass="BlueUIImageView" customModule="Reddit" customModuleProvider="target">
+                                                    <rect key="frame" x="16" y="5" width="109" height="46"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kX5-1O-0fZ" customClass="SecondaryLabel" customModule="Reddit" customModuleProvider="target">
+                                                    <rect key="frame" x="262" y="17.5" width="42" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="kX5-1O-0fZ" firstAttribute="centerY" secondItem="Xwr-bN-lTQ" secondAttribute="centerY" id="27R-fA-wgV"/>
+                                                <constraint firstItem="Gax-Tm-rnr" firstAttribute="centerY" secondItem="Xwr-bN-lTQ" secondAttribute="centerY" id="D32-56-oiL"/>
+                                                <constraint firstItem="Gax-Tm-rnr" firstAttribute="leading" secondItem="Xwr-bN-lTQ" secondAttribute="leading" constant="16" id="cxv-Hs-NBe"/>
+                                                <constraint firstItem="Gax-Tm-rnr" firstAttribute="top" secondItem="Xwr-bN-lTQ" secondAttribute="top" constant="5" id="hLg-vB-z2Y"/>
+                                                <constraint firstAttribute="trailing" secondItem="kX5-1O-0fZ" secondAttribute="trailing" constant="16" id="pZF-M4-FjK"/>
+                                                <constraint firstItem="kX5-1O-0fZ" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Gax-Tm-rnr" secondAttribute="trailing" constant="16" id="rfv-T1-OW2"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection headerTitle="Comments" id="i8s-lO-wsR">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="56" id="NiT-am-Rx6" customClass="GroupThemeTableViewCell" customModule="Reddit" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="335.5" width="320" height="56"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="NiT-am-Rx6" id="Mkn-Yb-pEO">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="56"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shortSwipeRight" translatesAutoresizingMaskIntoConstraints="NO" id="7hD-J7-ZMm" customClass="BlueUIImageView" customModule="Reddit" customModuleProvider="target">
+                                                    <rect key="frame" x="16" y="5" width="109" height="46"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pvx-x0-TE5" customClass="SecondaryLabel" customModule="Reddit" customModuleProvider="target">
+                                                    <rect key="frame" x="262" y="17.5" width="42" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="Pvx-x0-TE5" firstAttribute="centerY" secondItem="Mkn-Yb-pEO" secondAttribute="centerY" id="9gy-bW-OZQ"/>
+                                                <constraint firstItem="7hD-J7-ZMm" firstAttribute="top" secondItem="Mkn-Yb-pEO" secondAttribute="top" constant="5" id="E7j-4C-AX4"/>
+                                                <constraint firstItem="7hD-J7-ZMm" firstAttribute="centerY" secondItem="Mkn-Yb-pEO" secondAttribute="centerY" id="Y37-9r-mvd"/>
+                                                <constraint firstItem="Pvx-x0-TE5" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="7hD-J7-ZMm" secondAttribute="trailing" constant="16" id="bow-4N-PKt"/>
+                                                <constraint firstItem="7hD-J7-ZMm" firstAttribute="leading" secondItem="Mkn-Yb-pEO" secondAttribute="leading" constant="16" id="d2E-HO-Dvo"/>
+                                                <constraint firstAttribute="trailing" secondItem="Pvx-x0-TE5" secondAttribute="trailing" constant="16" id="uyE-lm-REQ"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="56" id="aGC-aj-fCL" customClass="GroupThemeTableViewCell" customModule="Reddit" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="391.5" width="320" height="56"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="aGC-aj-fCL" id="NqY-3D-5ps">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="56"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="longSwipeRight" translatesAutoresizingMaskIntoConstraints="NO" id="Rdv-vf-vFV" customClass="BlueUIImageView" customModule="Reddit" customModuleProvider="target">
+                                                    <rect key="frame" x="16" y="5" width="109" height="46"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xwV-eO-Nnd" customClass="SecondaryLabel" customModule="Reddit" customModuleProvider="target">
+                                                    <rect key="frame" x="262" y="17.5" width="42" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="Rdv-vf-vFV" firstAttribute="leading" secondItem="NqY-3D-5ps" secondAttribute="leading" constant="16" id="17N-9u-l7o"/>
+                                                <constraint firstItem="xwV-eO-Nnd" firstAttribute="centerY" secondItem="NqY-3D-5ps" secondAttribute="centerY" id="6fQ-G4-Lhh"/>
+                                                <constraint firstItem="Rdv-vf-vFV" firstAttribute="centerY" secondItem="NqY-3D-5ps" secondAttribute="centerY" id="79A-2r-bzP"/>
+                                                <constraint firstItem="Rdv-vf-vFV" firstAttribute="top" secondItem="NqY-3D-5ps" secondAttribute="top" constant="5" id="X4u-1s-n1S"/>
+                                                <constraint firstAttribute="trailing" secondItem="xwV-eO-Nnd" secondAttribute="trailing" constant="16" id="xDP-Lm-0Gk"/>
+                                                <constraint firstItem="xwV-eO-Nnd" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Rdv-vf-vFV" secondAttribute="trailing" constant="16" id="zjs-QG-qIh"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="56" id="BDh-7a-MA4" customClass="GroupThemeTableViewCell" customModule="Reddit" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="447.5" width="320" height="56"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="BDh-7a-MA4" id="xPp-gz-vw2">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="56"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shortSwipeLeft" translatesAutoresizingMaskIntoConstraints="NO" id="TG2-mp-ZUU" customClass="BlueUIImageView" customModule="Reddit" customModuleProvider="target">
+                                                    <rect key="frame" x="16" y="5" width="109" height="46"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wkt-7h-5qV" customClass="SecondaryLabel" customModule="Reddit" customModuleProvider="target">
+                                                    <rect key="frame" x="262" y="17.5" width="42" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="Wkt-7h-5qV" secondAttribute="trailing" constant="16" id="4Tt-rL-S5a"/>
+                                                <constraint firstItem="TG2-mp-ZUU" firstAttribute="leading" secondItem="xPp-gz-vw2" secondAttribute="leading" constant="16" id="8Mj-tv-X7F"/>
+                                                <constraint firstItem="TG2-mp-ZUU" firstAttribute="top" secondItem="xPp-gz-vw2" secondAttribute="top" constant="5" id="GSC-yK-d7W"/>
+                                                <constraint firstItem="TG2-mp-ZUU" firstAttribute="centerY" secondItem="xPp-gz-vw2" secondAttribute="centerY" id="QDl-bM-7bT"/>
+                                                <constraint firstItem="Wkt-7h-5qV" firstAttribute="centerY" secondItem="xPp-gz-vw2" secondAttribute="centerY" id="TNq-JQ-KYV"/>
+                                                <constraint firstItem="Wkt-7h-5qV" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="TG2-mp-ZUU" secondAttribute="trailing" constant="16" id="fbe-bQ-jfX"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="56" id="reQ-ed-C7D" customClass="GroupThemeTableViewCell" customModule="Reddit" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="503.5" width="320" height="56"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="reQ-ed-C7D" id="FNc-5F-6gt">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="56"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="longSwipeLeft" translatesAutoresizingMaskIntoConstraints="NO" id="Mrk-zw-fdA" customClass="BlueUIImageView" customModule="Reddit" customModuleProvider="target">
+                                                    <rect key="frame" x="16" y="5" width="109" height="46"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bOP-fl-QS7" customClass="SecondaryLabel" customModule="Reddit" customModuleProvider="target">
+                                                    <rect key="frame" x="262" y="17.5" width="42" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="Mrk-zw-fdA" firstAttribute="centerY" secondItem="FNc-5F-6gt" secondAttribute="centerY" id="3rA-XW-9gg"/>
+                                                <constraint firstItem="bOP-fl-QS7" firstAttribute="centerY" secondItem="FNc-5F-6gt" secondAttribute="centerY" id="8Xe-xS-rac"/>
+                                                <constraint firstItem="bOP-fl-QS7" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Mrk-zw-fdA" secondAttribute="trailing" constant="16" id="G5e-g8-SFI"/>
+                                                <constraint firstItem="Mrk-zw-fdA" firstAttribute="leading" secondItem="FNc-5F-6gt" secondAttribute="leading" constant="16" id="dhd-bD-7vv"/>
+                                                <constraint firstAttribute="trailing" secondItem="bOP-fl-QS7" secondAttribute="trailing" constant="16" id="dmb-ES-x11"/>
+                                                <constraint firstItem="Mrk-zw-fdA" firstAttribute="top" secondItem="FNc-5F-6gt" secondAttribute="top" constant="5" id="eLN-Rj-dPu"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection headerTitle="Messages" id="VZc-Tp-af6">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="56" id="AP9-8I-eDU" customClass="GroupThemeTableViewCell" customModule="Reddit" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="615.5" width="320" height="56"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="AP9-8I-eDU" id="tb4-DO-pdb">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="56"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shortSwipeRight" translatesAutoresizingMaskIntoConstraints="NO" id="dnI-iI-APj" customClass="BlueUIImageView" customModule="Reddit" customModuleProvider="target">
+                                                    <rect key="frame" x="16" y="5" width="109" height="46"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Baj-ih-00k" customClass="SecondaryLabel" customModule="Reddit" customModuleProvider="target">
+                                                    <rect key="frame" x="262" y="17.5" width="42" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="dnI-iI-APj" firstAttribute="top" secondItem="tb4-DO-pdb" secondAttribute="top" constant="5" id="90r-dl-1IU"/>
+                                                <constraint firstAttribute="trailing" secondItem="Baj-ih-00k" secondAttribute="trailing" constant="16" id="DEp-ob-Zf8"/>
+                                                <constraint firstItem="Baj-ih-00k" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="dnI-iI-APj" secondAttribute="trailing" constant="16" id="TtP-xp-c16"/>
+                                                <constraint firstItem="dnI-iI-APj" firstAttribute="leading" secondItem="tb4-DO-pdb" secondAttribute="leading" constant="16" id="fEE-ZE-5Ns"/>
+                                                <constraint firstItem="Baj-ih-00k" firstAttribute="centerY" secondItem="tb4-DO-pdb" secondAttribute="centerY" id="mnF-uT-3VU"/>
+                                                <constraint firstItem="dnI-iI-APj" firstAttribute="centerY" secondItem="tb4-DO-pdb" secondAttribute="centerY" id="yC4-3x-FrL"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="56" id="reS-Jc-OB4" customClass="GroupThemeTableViewCell" customModule="Reddit" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="671.5" width="320" height="56"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="reS-Jc-OB4" id="jqq-5f-5e5">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="56"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="longSwipeRight" translatesAutoresizingMaskIntoConstraints="NO" id="gUL-sC-Khj" customClass="BlueUIImageView" customModule="Reddit" customModuleProvider="target">
+                                                    <rect key="frame" x="16" y="5" width="109" height="46"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lYq-RH-8xc" customClass="SecondaryLabel" customModule="Reddit" customModuleProvider="target">
+                                                    <rect key="frame" x="262" y="17.5" width="42" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="lYq-RH-8xc" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="gUL-sC-Khj" secondAttribute="trailing" constant="16" id="GkF-vy-xUD"/>
+                                                <constraint firstItem="lYq-RH-8xc" firstAttribute="centerY" secondItem="jqq-5f-5e5" secondAttribute="centerY" id="NVo-cM-7Tq"/>
+                                                <constraint firstItem="gUL-sC-Khj" firstAttribute="top" secondItem="jqq-5f-5e5" secondAttribute="top" constant="5" id="PYG-Tz-akW"/>
+                                                <constraint firstItem="gUL-sC-Khj" firstAttribute="leading" secondItem="jqq-5f-5e5" secondAttribute="leading" constant="16" id="QXM-gC-VmV"/>
+                                                <constraint firstItem="gUL-sC-Khj" firstAttribute="centerY" secondItem="jqq-5f-5e5" secondAttribute="centerY" id="R8s-bd-TDf"/>
+                                                <constraint firstAttribute="trailing" secondItem="lYq-RH-8xc" secondAttribute="trailing" constant="16" id="cy4-r7-vzQ"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="56" id="zzF-xd-JUJ" customClass="GroupThemeTableViewCell" customModule="Reddit" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="727.5" width="320" height="56"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="zzF-xd-JUJ" id="qnn-Ks-yLZ">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="56"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shortSwipeLeft" translatesAutoresizingMaskIntoConstraints="NO" id="dIa-Zn-dtn" customClass="BlueUIImageView" customModule="Reddit" customModuleProvider="target">
+                                                    <rect key="frame" x="16" y="5" width="109" height="46"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VkX-h9-ED2" customClass="SecondaryLabel" customModule="Reddit" customModuleProvider="target">
+                                                    <rect key="frame" x="262" y="17.5" width="42" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="dIa-Zn-dtn" firstAttribute="leading" secondItem="qnn-Ks-yLZ" secondAttribute="leading" constant="16" id="4QY-a2-Aid"/>
+                                                <constraint firstItem="VkX-h9-ED2" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="dIa-Zn-dtn" secondAttribute="trailing" constant="16" id="4dM-pc-eTi"/>
+                                                <constraint firstAttribute="trailing" secondItem="VkX-h9-ED2" secondAttribute="trailing" constant="16" id="DaT-zW-oxE"/>
+                                                <constraint firstItem="VkX-h9-ED2" firstAttribute="centerY" secondItem="qnn-Ks-yLZ" secondAttribute="centerY" id="TNb-lV-aXd"/>
+                                                <constraint firstItem="dIa-Zn-dtn" firstAttribute="centerY" secondItem="qnn-Ks-yLZ" secondAttribute="centerY" id="paS-Lz-VOJ"/>
+                                                <constraint firstItem="dIa-Zn-dtn" firstAttribute="top" secondItem="qnn-Ks-yLZ" secondAttribute="top" constant="5" id="yfw-fh-A0t"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="56" id="PBA-3a-MLf" customClass="GroupThemeTableViewCell" customModule="Reddit" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="783.5" width="320" height="56"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="PBA-3a-MLf" id="xbY-fq-KrG">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="56"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="longSwipeLeft" translatesAutoresizingMaskIntoConstraints="NO" id="6Hg-Zc-KpC" customClass="BlueUIImageView" customModule="Reddit" customModuleProvider="target">
+                                                    <rect key="frame" x="16" y="5" width="109" height="46"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sex-QN-8wY" customClass="SecondaryLabel" customModule="Reddit" customModuleProvider="target">
+                                                    <rect key="frame" x="262" y="17.5" width="42" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="Sex-QN-8wY" secondAttribute="trailing" constant="16" id="DeW-Hc-dPS"/>
+                                                <constraint firstItem="Sex-QN-8wY" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Hg-Zc-KpC" secondAttribute="trailing" constant="16" id="ITV-a8-3nX"/>
+                                                <constraint firstItem="6Hg-Zc-KpC" firstAttribute="top" secondItem="xbY-fq-KrG" secondAttribute="top" constant="5" id="euD-ad-C2y"/>
+                                                <constraint firstItem="6Hg-Zc-KpC" firstAttribute="centerY" secondItem="xbY-fq-KrG" secondAttribute="centerY" id="jyP-0g-N7i"/>
+                                                <constraint firstItem="Sex-QN-8wY" firstAttribute="centerY" secondItem="xbY-fq-KrG" secondAttribute="centerY" id="qog-yA-rEV"/>
+                                                <constraint firstItem="6Hg-Zc-KpC" firstAttribute="leading" secondItem="xbY-fq-KrG" secondAttribute="leading" constant="16" id="r6n-MD-GLh"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection headerTitle="Display" id="BOz-w7-aB9">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="56" id="CRh-OR-Rps" customClass="GroupThemeTableViewCell" customModule="Reddit" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="895.5" width="320" height="56"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="CRh-OR-Rps" id="5hQ-Fd-Q9Z">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="56"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hide Comment Actions" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.75" translatesAutoresizingMaskIntoConstraints="NO" id="Xi2-cJ-5rd" customClass="PrimaryLabel" customModule="Reddit" customModuleProvider="target">
+                                                    <rect key="frame" x="16" y="17.5" width="177" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Mgu-i7-QEa">
+                                                    <rect key="frame" x="255" y="12.5" width="51" height="31"/>
+                                                </switch>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="Mgu-i7-QEa" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Xi2-cJ-5rd" secondAttribute="trailing" constant="16" id="0CO-EP-3ms"/>
+                                                <constraint firstItem="Xi2-cJ-5rd" firstAttribute="leading" secondItem="5hQ-Fd-Q9Z" secondAttribute="leading" constant="16" id="2Xk-h6-dmb"/>
+                                                <constraint firstAttribute="trailing" secondItem="Mgu-i7-QEa" secondAttribute="trailing" constant="16" id="HmG-98-pdp"/>
+                                                <constraint firstItem="Mgu-i7-QEa" firstAttribute="top" secondItem="5hQ-Fd-Q9Z" secondAttribute="top" constant="12.5" id="M6a-W4-zzS"/>
+                                                <constraint firstItem="Mgu-i7-QEa" firstAttribute="centerY" secondItem="5hQ-Fd-Q9Z" secondAttribute="centerY" id="bLK-H8-sfC"/>
+                                                <constraint firstItem="Xi2-cJ-5rd" firstAttribute="centerY" secondItem="5hQ-Fd-Q9Z" secondAttribute="centerY" id="oHr-wV-gEY"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="jhe-jM-CW4" id="CDD-HR-Aad"/>
+                            <outlet property="delegate" destination="jhe-jM-CW4" id="jd6-qq-bOR"/>
+                        </connections>
+                    </tableView>
+                    <connections>
+                        <outlet property="commentLongSwipeLeftLabel" destination="xwV-eO-Nnd" id="23f-M5-NE1"/>
+                        <outlet property="commentLongSwipeRightLabel" destination="bOP-fl-QS7" id="q0t-mI-ddh"/>
+                        <outlet property="commentShortSwipeLeftLabel" destination="Pvx-x0-TE5" id="7Pt-3v-aTU"/>
+                        <outlet property="commentShortSwipeRightLabel" destination="Wkt-7h-5qV" id="iB8-Zk-sEK"/>
+                        <outlet property="hideCommentActionsLabel" destination="Xi2-cJ-5rd" id="DES-Tx-EWP"/>
+                        <outlet property="hideCommentActionsSwitch" destination="Mgu-i7-QEa" id="yvR-iS-bIO"/>
+                        <outlet property="linkLongSwipeLeftLabel" destination="6zR-6y-Mpt" id="OS5-vT-NOk"/>
+                        <outlet property="linkLongSwipeRightLabel" destination="kX5-1O-0fZ" id="GCq-c6-YaF"/>
+                        <outlet property="linkShortSwipeLeftLabel" destination="hdI-0y-rlB" id="Qcn-QC-VKX"/>
+                        <outlet property="linkShortSwipeRightLabel" destination="swx-6W-LTc" id="CYK-k5-w6Q"/>
+                        <outlet property="messageLongSwipeLeftLabel" destination="lYq-RH-8xc" id="8ZF-xC-xkb"/>
+                        <outlet property="messageLongSwipeRightLabel" destination="Sex-QN-8wY" id="ZAu-gw-vz0"/>
+                        <outlet property="messageShortSwipeLeftLabel" destination="Baj-ih-00k" id="F5E-Pi-Sb3"/>
+                        <outlet property="messageShortSwipeRightLabel" destination="VkX-h9-ED2" id="7zP-Ry-wOe"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="by4-b1-GBF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="95.652173913043484" y="138.61607142857142"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="longSwipeLeft" width="109" height="41"/>
+        <image name="longSwipeRight" width="109" height="41"/>
+        <image name="shortSwipeLeft" width="109" height="41"/>
+        <image name="shortSwipeRight" width="109" height="41"/>
+    </resources>
+</document>

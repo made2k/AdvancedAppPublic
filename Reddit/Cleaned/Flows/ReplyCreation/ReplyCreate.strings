@@ -1,0 +1,24 @@
+/* 
+  ReplyCreate.strings
+  Reddit
+
+  Created by made2k on 2/4/19.
+  Copyright © 2019 made2k. All rights reserved.
+*/
+
+"error saving reply" = "Error saving reply.";
+"error editing comment" = "Error editing comment.";
+"error saving message" = "Error sending message";
+
+"cancel comment alert title" = "Comfirm Cancel";
+"cancel comment alert message" = "Are you sure you want to cancel?";
+"cancel comment yes" = "Yes";
+"cancel comment no" = "No";
+
+"title message reply" = "Message reply";
+"title comment reply" = "Reply to comment";
+"title add comment" = "Add comment";
+"title edit comment" = "Edit comment";
+"title edit link" = "Edit Link";
+
+"replying to" = "Replying to...";

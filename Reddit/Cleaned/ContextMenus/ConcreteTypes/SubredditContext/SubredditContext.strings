@@ -1,0 +1,18 @@
+/* 
+  SubredditContext.strings
+  Reddit
+
+  Created by made2k on 8/14/19.
+  Copyright © 2019 made2k. All rights reserved.
+*/
+
+"subscribe title" = "Subscribe";
+"subscribe success" = "Successfully subscribed to r/%@";
+
+"unsubscribe title" = "Unsubscribe";
+"unsubscribe success" = "Successfully unsubscribed from r/%@";
+
+"subscription error" = "There was an error updating your subscription.";
+
+"sidebar title" = "View Sidebar";
+"sidebar empty error" = "This subreddit does not have a sidebar.";

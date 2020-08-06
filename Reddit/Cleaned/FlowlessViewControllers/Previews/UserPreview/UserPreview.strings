@@ -1,0 +1,10 @@
+/* 
+  UserPreview.strings
+  Reddit
+
+  Created by made2k on 8/14/19.
+  Copyright © 2019 made2k. All rights reserved.
+*/
+"age" = "Redditor since: %@";
+"post karma" = "Link karma: %@";
+"comment karma" = "Comment karma: %@";

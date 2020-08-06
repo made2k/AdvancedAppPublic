@@ -1,0 +1,14 @@
+/* 
+  LiveComments.strings
+  Reddit
+
+  Created by made2k on 2/24/19.
+  Copyright © 2019 made2k. All rights reserved.
+*/
+
+"Reply to Post" = "Replying to reddit post.";
+"Reply to user" = "Replying to comment by %@";
+
+// Idle button
+"Idle Disabled" = "Allow Sleep";
+"Idle Enabled" = "Keep Awake";

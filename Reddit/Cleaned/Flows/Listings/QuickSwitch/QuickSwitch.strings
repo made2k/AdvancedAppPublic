@@ -1,0 +1,12 @@
+/* 
+  QuickSwitch.strings
+  Reddit
+
+  Created by made2k on 1/5/19.
+  Copyright © 2019 made2k. All rights reserved.
+*/
+
+"Favorite Section Header" = "Favorites";
+"Search Results Section Header" = "Search Results";
+"Subscribed Section Header" = "Subscribed";
+"Feed Section Header" = "Feeds";
